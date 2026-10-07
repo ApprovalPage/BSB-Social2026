@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Approval page</title>
+	<style>
+div { 
+	display: block; 
+}
+</style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+</head>
+
+<body bgcolor="#EEE">
+	
+<div w3-include-html="menu-pband.html"></div>
+
+<script>
+includeHTML();
+</script>
+
+
+<hr />
+
+<div>	
+	
+
+	<table>
+		<tr>
+			<td colspan="5">
+			<p><font face="Arial, Helvetica, sans-serif">Pull Quotes 4x5</font></p>
+			</td>
+		</tr>
+		
+		
+		<tr valign="top">
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">4x5 A <i>Professional Services</i></font></p>
+       		<p><img src="pull/PullQuote-A-4x5.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">4x5 B <i>Foundations&#44; Trusts and Funds</i></font></p>
+       		<p><img src="pull/PullQuote-B-4x5.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">4x5 C <i>Unions</i></font></p>
+       		<p><img src="pull/PullQuote-C-4x5.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+		</tr> 
+		
+	</table>
+	
+<hr/>
+	<table>
+		<tr>
+			<td colspan="5">
+			<p><font face="Arial, Helvetica, sans-serif">Pull Quotes 1x1</font></p>
+			</td>
+		</tr>
+		
+		
+		<tr valign="top">
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">1x1 A <i>Professional Services</i></font></p>
+       		<p><img src="pull/PullQuote-A-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">1x1 B <i>Foundations&#44; Trusts and Funds</i></font></p>
+       		<p><img src="pull/PullQuote-B-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">1x1 C <i>Unions</i></font></p>
+       		<p><img src="pull/PullQuote-C-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+		</tr> 
+		
+	</table>
+
+<p></p>
+<hr />
+	
+
+	<table>
+		<tr>
+			<td colspan="5">
+			<p><font face="Arial, Helvetica, sans-serif">Infographics 4x5</font></p>
+			</td>
+		</tr>
+		
+		
+		<tr valign="top">
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">4x5 A <i>Professional Services</i></font></p>
+       		<p><img src="pull/Infographic-A-4x5.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">4x5 B <i>Foundations&#44; Trusts and Funds</i></font></p>
+       		<p><img src="pull/Infographic-B-4x5.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">4x5 C <i>Unions</i></font></p>
+       		<p><img src="pull/Infographic-C-4x5.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+		</tr> 
+		
+	</table>
+	
+<hr/>
+	<table>
+		<tr>
+			<td colspan="5">
+			<p><font face="Arial, Helvetica, sans-serif">Infographics 1x1</font></p>
+			</td>
+		</tr>
+		
+		
+		<tr valign="top">
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">1x1 A <i>Professional Services</i></font></p>
+       		<p><img src="pull/Infographic-A-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">1x1 B <i>Foundations&#44; Trusts and Funds</i></font></p>
+       		<p><img src="pull/Infographic-B-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">1x1 C <i>Unions</i></font></p>
+       		<p><img src="pull/Infographic-C-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+		</tr> 
+		
+	</table>
+	
+<hr/>
+	
+
+<hr />
+</div>
+	
+</body>
+</html>
