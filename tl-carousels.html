@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Approval page</title>
+	<style>
+div { 
+	display: block; 
+}
+</style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+</head>
+
+<body bgcolor="#EEE">
+	
+<div w3-include-html="menu-pband.html"></div>
+
+<script>
+includeHTML();
+</script>
+
+
+<hr />
+
+<div>	
+	
+
+	<table>
+		<tr>
+			<td colspan="5">
+			<p><font face="Arial, Helvetica, sans-serif">Carousel A "Not all banks" 1x1</font></p>
+			</td>
+		</tr>
+		
+		
+		<tr valign="top">
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">A1</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-A1-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">A2</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-A2-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">A3</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-A3-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">A4</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-A4-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">A5</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-A5-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+		</tr> 
+		
+	</table>
+
+<p></p>
+<hr />
+	
+	<table>
+		<tr>
+			<td colspan="5">
+			<p><font face="Arial, Helvetica, sans-serif">Carousel B "Have you asked?" 1x1</font></p>
+			</td>
+		</tr>
+		
+		
+		<tr valign="top">
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">B1</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-B1-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">B2</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-B2-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">B3</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-B3-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">B4</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-B4-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">B5</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-B5-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">B6</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-B6-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+		</tr> 
+		
+	</table>
+
+<p></p>
+<hr />
+	
+
+	<table>
+		<tr>
+			<td colspan="5">
+			<p><font face="Arial, Helvetica, sans-serif">Carousel C "Checklist" 4x5</font></p>
+			</td>
+		</tr>
+		
+		
+		<tr valign="top">
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">C1</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-C1-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">C2</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-C2-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">C3</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-C3-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">C4</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-C4-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">C5</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-C5-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+			
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif">C6</font></p>
+       		<p><img src="tl/BSB-Carousel-TL-C6-1x1.jpg" width="360" alt=""/></p>
+			</td>
+			
+			<td width="auto"></td>
+		</tr> 
+		
+	</table>
+
+<p></p>
+<hr />
+<p></p>
+<hr />
+</div>
+	
+</body>
+</html>
